@@ -704,8 +704,7 @@ main {
             background-image: url('../../../images/site-bg.jpg');
             background-position-x: center;
             background-position-y: 0px;
-            background-size: cover;
-            height: 810px;
+            height: 856px;
             .site-title {
                 font-family: Pinyon Script, cursive;
                 color: white;
@@ -776,6 +775,68 @@ main {
                 li {
                     color: #414141;
                     margin: 10px 0;
+                }
+            }
+        }
+        .contact-us {
+            background: #f9f9f9;
+            padding: 15px;
+            .head {
+                font-family: 'Oswald', sans-serif;
+                text-transform: uppercase;
+                font-size: 28px;
+                line-height: 1;
+                color: #414141;
+                font-weight: normal;
+                margin-bottom: 30px;
+                text-align: center;
+            }
+            iframe {
+                width: 100%;
+            }
+            .map-info {
+                color:#7f7f7f;
+                a {
+                    color:#7f7f7f!important;
+                }
+            }
+            form {
+                .input-group {
+                    margin-bottom:15px;
+                    label {
+                        color:#7f7f7f;
+                    }
+                }
+                button {
+                    font-family: 'Oswald',sans-serif;
+                    text-transform: uppercase;
+                    font-size: 12px;
+                    color: #fff;
+                    line-height: normal;
+                    border: 0 none #444;
+                    background-color: #444;
+                    padding: 5px 12px;
+                    -moz-border-radius: 3px;
+                    -webkit-border-radius: 3px;
+                    -khtml-border-radius: 3px;
+                    border-radius: 3px;
+                    -moz-box-shadow: 1px 1px 0 #ccc;
+                    -webkit-box-shadow: 1px 1px 0 #ccc;
+                    -khtml-box-shadow: 1px 1px 0 #ccc;
+                    box-shadow: 1px 1px 0 #ccc;
+                }
+            }
+        }
+        footer {
+            text-align: center;
+            padding-bottom:20px;
+            .footer-img {
+
+            }
+            .footer-text {
+                text-align: center;
+                a {
+                    color:white;
                 }
             }
         }
