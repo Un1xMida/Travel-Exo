@@ -722,23 +722,34 @@ main .site-content {
     padding-left: 15px !important; }
 
   /* line 856, ../../sass/main.scss */
-  main .site-content .site-title {
-    color: black !important; }
+  main .site-content .home-banner {
+    height: 330px !important;
+    background-size: cover; }
 
-  /* line 859, ../../sass/main.scss */
+  /* line 861, ../../sass/main.scss */
+  main .site-content .site-title {
+    line-height: 0px !important;
+    padding-top: 0px !important;
+    font-size: 30px; }
+
+  /* line 866, ../../sass/main.scss */
   main .site-content .slogan {
     display: none; }
 
-  /* line 862, ../../sass/main.scss */
+  /* line 869, ../../sass/main.scss */
   main .site-content .home-banner .site-txt {
     width: auto !important; }
 
-  /* line 865, ../../sass/main.scss */
+  /* line 872, ../../sass/main.scss */
   main .site-content .about-us .col-xs-12.col-md-4 {
     margin: 10px 0; }
 
-  /* line 868, ../../sass/main.scss */
+  /* line 875, ../../sass/main.scss */
   main .site-content .about-us ul {
-    margin-left: 20px; } }
+    margin-left: 20px; }
+
+  /* line 878, ../../sass/main.scss */
+  .footer-img img {
+    width: 100%; } }
 
 /*# sourceMappingURL=style.css.map */
