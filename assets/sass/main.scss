@@ -854,7 +854,19 @@ main {
         padding-left: 15px!important;
     }
     main .site-content .site-title {
-        color: black;
+        color: black!important;
+    }
+    main .site-content .slogan {
+        display: none;
+    }
+    main .site-content .home-banner .site-txt {
+        width: auto!important;
+    }
+    main .site-content .about-us .col-xs-12.col-md-4 {
+        margin:10px 0;
+    }
+    main .site-content .about-us ul{
+        margin-left:20px;
     }
 }
 

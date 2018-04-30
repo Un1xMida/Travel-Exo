@@ -723,6 +723,22 @@ main .site-content {
 
   /* line 856, ../../sass/main.scss */
   main .site-content .site-title {
-    color: black; } }
+    color: black !important; }
+
+  /* line 859, ../../sass/main.scss */
+  main .site-content .slogan {
+    display: none; }
+
+  /* line 862, ../../sass/main.scss */
+  main .site-content .home-banner .site-txt {
+    width: auto !important; }
+
+  /* line 865, ../../sass/main.scss */
+  main .site-content .about-us .col-xs-12.col-md-4 {
+    margin: 10px 0; }
+
+  /* line 868, ../../sass/main.scss */
+  main .site-content .about-us ul {
+    margin-left: 20px; } }
 
 /*# sourceMappingURL=style.css.map */
