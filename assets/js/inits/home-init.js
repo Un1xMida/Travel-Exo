@@ -1,4 +1,6 @@
 $(window).load(function() {
+    
+    $('main .site-content').css({'margin-top':$('.navbar').outerHeight()})
     //Preloader Script
     $('.preloader-cont').fadeOut();
     $('main').fadeIn();
@@ -16,7 +18,29 @@ $(window).load(function() {
 
 });
 
+//TYPED JS
+document.addEventListener('DOMContentLoaded', function(){
+    $(func = function () {
+        $(".element").typed({
+          stringsElement: document.getElementById('typed-strings'),
+          typeSpeed: 40, // typing speed
+          backDelay: 500,
+          backSpeed: 0,
+          loop: true,
+      });
 
+  });
+});
+
+$(window).scroll(function(){
+    let scrollLimit = $(window).scrollTop();
+    if (scrollLimit > 50){
+        $('.navbar').addClass('fixed-line');
+    }
+    else {
+        $('.navbar').removeClass('fixed-line');
+    }
+})
 
 // functional thing to make the spyscroll
 $('.button-spy').click(function() {

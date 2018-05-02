@@ -1,38 +1,93 @@
 @import url("https://fonts.googleapis.com/css?family=Yesteryear");
 @import url("https://fonts.googleapis.com/css?family=Raleway");
+/* line 1, ../../sass/main.scss */
 .font-special {
   font-family: 'Yesteryear', cursive; }
 
+/* line 5, ../../sass/main.scss */
 .font-normal {
   font-family: 'Raleway', sans-serif; }
 
+/* line 9, ../../sass/main.scss */
 .overlay {
   background: rgba(0, 0, 0, 0.25); }
 
+/* line 13, ../../sass/main.scss */
 .noPadding-right {
   padding-right: 0px !important; }
 
+/* line 17, ../../sass/main.scss */
 .noPadding-left {
   padding-left: 0px !important; }
 
+/* line 21, ../../sass/main.scss */
 .noPadding {
   padding-left: 0px !important;
   padding-right: 0px !important; }
 
+/* line 26, ../../sass/main.scss */
 .widget {
   padding: 40px 0; }
+  /* line 28, ../../sass/main.scss */
   .widget .widget-title {
     text-align: center; }
+    /* line 30, ../../sass/main.scss */
     .widget .widget-title h2 {
       font-family: 'Yesteryear', cursive;
       margin-bottom: 40px;
       font-size: 65px;
       color: #9b7b32; }
+    /* line 36, ../../sass/main.scss */
     .widget .widget-title p {
       margin-bottom: 40px !important;
       color: #295816;
       font-size: 16px; }
 
+/* line 45, ../../sass/main.scss */
+#typed {
+  font-family: 'Oswald', sans-serif;
+  text-transform: uppercase;
+  font-size: 28px;
+  line-height: 1;
+  color: #414141;
+  font-weight: normal;
+  text-align: center;
+  margin: 70px auto 0 auto;
+  display: inline; }
+
+/* line 56, ../../sass/main.scss */
+.typed-cursor {
+  opacity: 1;
+  -webkit-animation: blink 0.7s infinite;
+  -moz-animation: blink 0.7s infinite;
+  animation: blink 0.7s infinite;
+  color: black;
+  display: inline;
+  font-size: 35px;
+  margin-left: 5px; }
+
+@keyframes blink {
+  0% {
+    opacity: 1; }
+  50% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+@-webkit-keyframes blink {
+  0% {
+    opacity: 1; }
+  50% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+@-moz-keyframes blink {
+  0% {
+    opacity: 1; }
+  50% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+/* line 82, ../../sass/main.scss */
 .goTop {
   position: fixed;
   z-index: 2;
@@ -42,26 +97,31 @@
   padding: 20px;
   display: none;
   cursor: pointer; }
+  /* line 91, ../../sass/main.scss */
   .goTop i {
     font-size: 20px; }
 
 /*=================================================|
 |                    Reset Section                 |
 ==================================================*/
+/* line 101, ../../sass/main.scss */
 *:focus {
   outline: none; }
 
+/* line 105, ../../sass/main.scss */
 h1,
 h2,
 h3 {
   margin: 0; }
 
+/* line 111, ../../sass/main.scss */
 a,
 a:hover,
 a:focus,
 a:active {
   text-decoration: none; }
 
+/* line 118, ../../sass/main.scss */
 .navbar-default .navbar-nav > li > a {
   color: white;
   font-family: 'Oswald', sans-serif;
@@ -69,18 +129,23 @@ a:active {
   font-size: 20px;
   padding: 10px !important;
   background: transparent !important; }
+  /* line 125, ../../sass/main.scss */
   .navbar-default .navbar-nav > li > a:hover {
     color: #8de5ff !important; }
 
+/* line 130, ../../sass/main.scss */
 .navbar-default .navbar-nav > .active > a {
   color: #8de5ff !important; }
 
+/* line 134, ../../sass/main.scss */
 .navbar {
   min-height: auto; }
 
+/* line 138, ../../sass/main.scss */
 p {
   margin: 0 !important; }
 
+/* line 142, ../../sass/main.scss */
 .swiper-button-next,
 .swiper-button-prev {
   background-image: none !important;
@@ -88,11 +153,13 @@ p {
   height: auto !important;
   cursor: pointer !important; }
 
+/* line 150, ../../sass/main.scss */
 body {
   font-family: Arial, Helvetica, sans-serif !important;
   color: #fff;
   font-size: 16px; }
 
+/* line 156, ../../sass/main.scss */
 h1 {
   font-family: 'Oswald', sans-serif;
   text-transform: uppercase;
@@ -107,26 +174,31 @@ h1 {
 /*=================================================|
 |                    Shared Section                |
 ==================================================*/
+/* line 177, ../../sass/main.scss */
 .centered-table {
   display: table;
   height: 100%;
   width: 100%; }
+  /* line 181, ../../sass/main.scss */
   .centered-table .centered-elements {
     display: table-cell;
     vertical-align: middle; }
 
+/* line 187, ../../sass/main.scss */
 .relative {
   position: relative; }
 
 /*=================================================|
 |                    Preloader Section             |
 ==================================================*/
+/* line 196, ../../sass/main.scss */
 .preloader-cont {
   background: white;
   position: fixed;
   height: 100%;
   width: 100%;
   z-index: 9; }
+  /* line 202, ../../sass/main.scss */
   .preloader-cont .preloader {
     position: absolute;
     top: 50%;
@@ -141,6 +213,7 @@ h1 {
     transform-origin: center center;
     -webkit-transform: rotateY(180deg) rotateZ(-60deg);
     transform: rotateY(180deg) rotateZ(-60deg); }
+    /* line 216, ../../sass/main.scss */
     .preloader-cont .preloader .slice {
       border-top: 1.125em solid transparent;
       border-right: none;
@@ -152,64 +225,77 @@ h1 {
       -webkit-transform-origin: left bottom;
       transform-origin: left bottom;
       border-radius: 3px 3px 0 0; }
+      /* line 227, ../../sass/main.scss */
       .preloader-cont .preloader .slice:nth-child(1) {
         -webkit-transform: rotateZ(60deg) rotateY(0deg) rotateX(0);
         transform: rotateZ(60deg) rotateY(0deg) rotateX(0);
         -webkit-animation: 0.15s linear 0.82s preload-hide-1 both 1;
         animation: 0.15s linear 0.82s preload-hide-1 both 1; }
+      /* line 233, ../../sass/main.scss */
       .preloader-cont .preloader .slice:nth-child(2) {
         -webkit-transform: rotateZ(120deg) rotateY(0deg) rotateX(0);
         transform: rotateZ(120deg) rotateY(0deg) rotateX(0);
         -webkit-animation: 0.15s linear 0.74s preload-hide-2 both 1;
         animation: 0.15s linear 0.74s preload-hide-2 both 1; }
+      /* line 239, ../../sass/main.scss */
       .preloader-cont .preloader .slice:nth-child(3) {
         -webkit-transform: rotateZ(180deg) rotateY(0deg) rotateX(0);
         transform: rotateZ(180deg) rotateY(0deg) rotateX(0);
         -webkit-animation: 0.15s linear 0.66s preload-hide-3 both 1;
         animation: 0.15s linear 0.66s preload-hide-3 both 1; }
+      /* line 245, ../../sass/main.scss */
       .preloader-cont .preloader .slice:nth-child(4) {
         -webkit-transform: rotateZ(240deg) rotateY(0deg) rotateX(0);
         transform: rotateZ(240deg) rotateY(0deg) rotateX(0);
         -webkit-animation: 0.15s linear 0.58s preload-hide-4 both 1;
         animation: 0.15s linear 0.58s preload-hide-4 both 1; }
+      /* line 251, ../../sass/main.scss */
       .preloader-cont .preloader .slice:nth-child(5) {
         -webkit-transform: rotateZ(300deg) rotateY(0deg) rotateX(0);
         transform: rotateZ(300deg) rotateY(0deg) rotateX(0);
         -webkit-animation: 0.15s linear 0.5s preload-hide-5 both 1;
         animation: 0.15s linear 0.5s preload-hide-5 both 1; }
+      /* line 257, ../../sass/main.scss */
       .preloader-cont .preloader .slice:nth-child(6) {
         -webkit-transform: rotateZ(360deg) rotateY(0deg) rotateX(0);
         transform: rotateZ(360deg) rotateY(0deg) rotateX(0);
         -webkit-animation: 0.15s linear 0.42s preload-hide-6 both 1;
         animation: 0.15s linear 0.42s preload-hide-6 both 1; }
+    /* line 264, ../../sass/main.scss */
     .preloader-cont .preloader.loading {
       -webkit-animation: 2s preload-flip steps(2) infinite both;
       animation: 2s preload-flip steps(2) infinite both; }
+      /* line 268, ../../sass/main.scss */
       .preloader-cont .preloader.loading .slice:nth-child(1) {
         -webkit-transform: rotateZ(60deg) rotateY(90deg) rotateX(0);
         transform: rotateZ(60deg) rotateY(90deg) rotateX(0);
         -webkit-animation: 2s preload-cycle-1 linear infinite both;
         animation: 2s preload-cycle-1 linear infinite both; }
+      /* line 274, ../../sass/main.scss */
       .preloader-cont .preloader.loading .slice:nth-child(2) {
         -webkit-transform: rotateZ(120deg) rotateY(90deg) rotateX(0);
         transform: rotateZ(120deg) rotateY(90deg) rotateX(0);
         -webkit-animation: 2s preload-cycle-2 linear infinite both;
         animation: 2s preload-cycle-2 linear infinite both; }
+      /* line 280, ../../sass/main.scss */
       .preloader-cont .preloader.loading .slice:nth-child(3) {
         -webkit-transform: rotateZ(180deg) rotateY(90deg) rotateX(0);
         transform: rotateZ(180deg) rotateY(90deg) rotateX(0);
         -webkit-animation: 2s preload-cycle-3 linear infinite both;
         animation: 2s preload-cycle-3 linear infinite both; }
+      /* line 286, ../../sass/main.scss */
       .preloader-cont .preloader.loading .slice:nth-child(4) {
         -webkit-transform: rotateZ(240deg) rotateY(90deg) rotateX(0);
         transform: rotateZ(240deg) rotateY(90deg) rotateX(0);
         -webkit-animation: 2s preload-cycle-4 linear infinite both;
         animation: 2s preload-cycle-4 linear infinite both; }
+      /* line 292, ../../sass/main.scss */
       .preloader-cont .preloader.loading .slice:nth-child(5) {
         -webkit-transform: rotateZ(300deg) rotateY(90deg) rotateX(0);
         transform: rotateZ(300deg) rotateY(90deg) rotateX(0);
         -webkit-animation: 2s preload-cycle-5 linear infinite both;
         animation: 2s preload-cycle-5 linear infinite both; }
+      /* line 298, ../../sass/main.scss */
       .preloader-cont .preloader.loading .slice:nth-child(6) {
         -webkit-transform: rotateZ(360deg) rotateY(90deg) rotateX(0);
         transform: rotateZ(360deg) rotateY(90deg) rotateX(0);
@@ -532,24 +618,57 @@ h1 {
 /*=================================================|
 |                    Site Section                  |
 ==================================================*/
+/* line 731, ../../sass/main.scss */
+main .fixed-line {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+  padding: 0px 0; }
+  /* line 737, ../../sass/main.scss */
+  main .fixed-line .social {
+    margin-bottom: 0px; }
+    /* line 740, ../../sass/main.scss */
+    main .fixed-line .social a i {
+      font-size: 15px; }
+/* line 747, ../../sass/main.scss */
 main header nav {
   background: #3b87c5 !important;
   border: 1px solid transparent !important;
   border-radius: 0 !important;
-  margin-bottom: 0 !important; }
+  margin-bottom: 0 !important;
+  padding: 10px;
+  transition: all 200ms; }
+  /* line 754, ../../sass/main.scss */
+  main header nav .social {
+    text-align: center;
+    margin-bottom: 5px; }
+    /* line 757, ../../sass/main.scss */
+    main header nav .social a {
+      margin: 0 5px;
+      color: white; }
+      /* line 760, ../../sass/main.scss */
+      main header nav .social a i {
+        font-size: 20px;
+        transition: all 200ms; }
+  /* line 766, ../../sass/main.scss */
   main header nav ul.nav {
     float: none !important;
     text-align: center; }
+    /* line 769, ../../sass/main.scss */
     main header nav ul.nav li {
       float: none !important;
       display: inline-block; }
+/* line 776, ../../sass/main.scss */
 main .site-content {
   background: #2772a9; }
+  /* line 778, ../../sass/main.scss */
   main .site-content .home-banner {
     background-image: url("../../../images/site-bg.jpg");
     background-position-x: center;
     background-position-y: 0px;
     height: 856px; }
+    /* line 783, ../../sass/main.scss */
     main .site-content .home-banner .site-title {
       font-family: Pinyon Script, cursive;
       color: white;
@@ -557,27 +676,33 @@ main .site-content {
       line-height: 72px;
       padding-top: 20px;
       text-align: center; }
+    /* line 791, ../../sass/main.scss */
     main .site-content .home-banner .slogan {
       color: #8de5ff;
       font-family: 'Oswald', sans-serif;
       font-size: 17px;
       line-height: 1;
       text-transform: uppercase; }
+      /* line 798, ../../sass/main.scss */
       main .site-content .home-banner .slogan img {
         display: block;
-        margin: 0 auto; }
+        margin: 0 auto 70px auto; }
+    /* line 803, ../../sass/main.scss */
     main .site-content .home-banner .site-description {
       width: 300px;
       color: #7f7f7f;
       margin: 50px 0;
       font-weight: bold; }
+    /* line 809, ../../sass/main.scss */
     main .site-content .home-banner .site-txt {
       width: 673px;
       margin: 70px auto 0 auto;
       text-align: center; }
+  /* line 815, ../../sass/main.scss */
   main .site-content .about-us {
     background: #f9f9f9;
     padding: 15px; }
+    /* line 818, ../../sass/main.scss */
     main .site-content .about-us .head {
       font-family: 'Oswald', sans-serif;
       text-transform: uppercase;
@@ -587,32 +712,43 @@ main .site-content {
       font-weight: normal;
       margin-bottom: 30px;
       text-align: center; }
+    /* line 828, ../../sass/main.scss */
     main .site-content .about-us .welcome-img {
       margin-bottom: 30px; }
+      /* line 830, ../../sass/main.scss */
       main .site-content .about-us .welcome-img img {
         width: 100%;
         height: 158px; }
+    /* line 835, ../../sass/main.scss */
     main .site-content .about-us .welcome-desc {
       color: #7f7f7f;
       line-height: 1.5;
-      font-size: 14px; }
+      font-size: 14px;
+      margin-bottom: 10px; }
+    /* line 842, ../../sass/main.scss */
     main .site-content .about-us .tour:first-of-type {
       margin-bottom: 20px; }
+    /* line 846, ../../sass/main.scss */
     main .site-content .about-us .tour .tour-img img {
       width: 100%; }
+    /* line 850, ../../sass/main.scss */
     main .site-content .about-us .tour .tour-title {
       background: white;
       text-align: center;
       color: #414141;
       padding: 5px; }
+    /* line 857, ../../sass/main.scss */
     main .site-content .about-us ul {
       list-style: circle; }
+      /* line 859, ../../sass/main.scss */
       main .site-content .about-us ul li {
         color: #414141;
         margin: 10px 0; }
+  /* line 865, ../../sass/main.scss */
   main .site-content .contact-us {
     background: #f9f9f9;
     padding: 15px; }
+    /* line 868, ../../sass/main.scss */
     main .site-content .contact-us .head {
       font-family: 'Oswald', sans-serif;
       text-transform: uppercase;
@@ -622,16 +758,22 @@ main .site-content {
       font-weight: normal;
       margin-bottom: 30px;
       text-align: center; }
+    /* line 878, ../../sass/main.scss */
     main .site-content .contact-us iframe {
       width: 100%; }
+    /* line 881, ../../sass/main.scss */
     main .site-content .contact-us .map-info {
       color: #7f7f7f; }
+      /* line 883, ../../sass/main.scss */
       main .site-content .contact-us .map-info a {
         color: #7f7f7f !important; }
+    /* line 888, ../../sass/main.scss */
     main .site-content .contact-us form .input-group {
       margin-bottom: 15px; }
+      /* line 890, ../../sass/main.scss */
       main .site-content .contact-us form .input-group label {
         color: #7f7f7f; }
+    /* line 894, ../../sass/main.scss */
     main .site-content .contact-us form button {
       font-family: 'Oswald', sans-serif;
       text-transform: uppercase;
@@ -649,11 +791,14 @@ main .site-content {
       -webkit-box-shadow: 1px 1px 0 #ccc;
       -khtml-box-shadow: 1px 1px 0 #ccc;
       box-shadow: 1px 1px 0 #ccc; }
+  /* line 914, ../../sass/main.scss */
   main .site-content footer {
     text-align: center;
     padding-bottom: 20px; }
+    /* line 918, ../../sass/main.scss */
     main .site-content footer .footer-text {
       text-align: center; }
+      /* line 920, ../../sass/main.scss */
       main .site-content footer .footer-text a {
         color: white; }
 
@@ -661,51 +806,64 @@ main .site-content {
 |                    Responsive Section            |
 ==================================================*/
 @media only screen and (max-width: 768px) {
+  /* line 934, ../../sass/main.scss */
   .noPadding {
     padding-right: 15px !important;
     padding-left: 15px !important; }
 
+  /* line 938, ../../sass/main.scss */
   main .site-content .home-banner {
     height: 330px !important;
     background-size: cover; }
 
+  /* line 942, ../../sass/main.scss */
   main .site-content .site-title {
     line-height: 0px !important;
     padding-top: 25px !important;
     font-size: 24px !important; }
 
+  /* line 947, ../../sass/main.scss */
   main .site-content .slogan {
     display: none !important; }
 
+  /* line 950, ../../sass/main.scss */
   h1 {
     font-size: 20px;
     margin-bottom: 10px;
     text-align: center; }
 
+  /* line 955, ../../sass/main.scss */
   main .site-content .home-banner .site-description {
     width: 100%;
     color: #fff !important;
     margin-top: 275px;
     text-align: center !important; }
 
+  /* line 961, ../../sass/main.scss */
   main .site-content .home-banner .site-txt {
     width: auto !important; }
 
+  /* line 964, ../../sass/main.scss */
   main .site-content .about-us .col-xs-12.col-md-4 {
     margin: 10px 0; }
 
+  /* line 967, ../../sass/main.scss */
   main .site-content .about-us ul {
     margin-left: 20px; }
 
+  /* line 970, ../../sass/main.scss */
   .footer-img img {
     width: 100%; } }
 @media only screen and (max-width: 328px) {
+  /* line 976, ../../sass/main.scss */
   main .site-content .home-banner {
     height: 250px !important; }
 
+  /* line 979, ../../sass/main.scss */
   main .site-content .home-banner .site-description {
     margin-top: 210px !important; }
 
+  /* line 982, ../../sass/main.scss */
   .widget:first-of-type {
     padding: 100px 0 40px 0 !important; } }
 

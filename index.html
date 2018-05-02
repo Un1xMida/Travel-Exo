@@ -31,7 +31,7 @@
     </div>
     <main id="home">
         <header>
-            <nav class="navbar navbar-default">
+            <nav class="navbar navbar-default navbar-fixed-top">
                 <div class="container-fluid">
                     <!-- Brand and toggle get grouped for better mobile display -->
                     <div class="navbar-header">
@@ -44,6 +44,16 @@
                     </div>
                     <!-- Collect the nav links, forms, and other content for toggling -->
                     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <div class="social">
+                            <a href="#" class="fb" title="Join us on Facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                            <a href="#" class="tw" title="Join us on Twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                            <a href="#" class="g-plus" title="Join us on Google+"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+                            <a href="#" class="dribbble" title="Join us on Dribbble"><i class="fa fa-dribbble" aria-hidden="true"></i></a>
+                            <a href="#" class="vimeo" title="Join us on Vimeo"><i class="fa fa-vimeo" aria-hidden="true"></i></a>
+                            <a href="#" class="pinterest" title="Join us on Pinterest"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a>
+                            <a href="#" class="insta" title="Join us on Instagram"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                            <a href="#" class="in" title="Join us on Linked In"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                        </div>
                         <ul class="nav navbar-nav">
                             <li class="active"><a href="#" class="button-spy" data-link="#home">Home</a></li>
                             <li><a href="#" class="button-spy" data-link="#aboutUs">About US</a></li>
@@ -56,7 +66,7 @@
             </nav>
         </header>
         <section class="site-content">
-            <div class="home-banner">
+            <div class="home-banner text-center">
                 <div class="container">
                     <div class="site-title">
                         Kuwait Tourism &amp; Travel Expo
@@ -65,9 +75,9 @@
                         TRAVEL EXPO & MARKET 2014
                         <img src="images/slogan-img.png" alt="">
                     </div>
-                    <div class="site-txt hidden-xs hidden-sm">
-                        <h1>in Kuwait Tourism &amp; Travel Expo [Exhibition &amp; Market]<br></h1>
-                        <h1>you can find Tourism &amp; Vacations Travel Packages<br></h1>
+                    <div id="typed" class="element"></div>
+                    <div class="site-txt hidden-xs hidden-sm" id="typed-strings">
+                        <span>  in Kuwait Tourism &amp; Travel Expo [Exhibition &amp; Market] <br/>   you can find Tourism &amp; Vacations Travel Packages</span>
                     </div>
                 </div>
             </div>
@@ -142,8 +152,7 @@
                                 <div class="head">
                                     OUR ADDRESS
                                 </div>
-                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d27825.259745256964!2d48.002006389387994!3d29.336380557290322!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3fcf9c8ce8db396d%3A0x6747a130779f0bc0!2sHawally%2C+Kuwait!5e0!3m2!1sen!2seg!4v1525004311965"
-                                    height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d27825.259745256964!2d48.002006389387994!3d29.336380557290322!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3fcf9c8ce8db396d%3A0x6747a130779f0bc0!2sHawally%2C+Kuwait!5e0!3m2!1sen!2seg!4v1525004311965" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
                                 <div class="map-info">
                                     <div class="location">
                                         Hawally, Kuwait
@@ -200,6 +209,7 @@
     <script src="assets/js/equalHeights.js" type="text/javascript"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js" type="text/javascript"></script>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-scrollTo/2.1.2/jquery.scrollTo.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/1.1.6/typed.min.js"></script>
     <!-- Home Init File -->
     <script src="assets/js/inits/home-init.js" type="text/javascript"></script>
 </body>
