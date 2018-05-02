@@ -65,7 +65,9 @@ a:active {
 .navbar-default .navbar-nav > li > a {
   color: white; }
 
-.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:focus, .navbar-default .navbar-nav > .active > a:hover {
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:focus,
+.navbar-default .navbar-nav > .active > a:hover {
   color: #fff !important;
   background-color: transparent; }
 
@@ -80,9 +82,17 @@ p {
   cursor: pointer !important; }
 
 body {
-  font-family: 'Raleway', sans-serif;
+  font-family: Arial, Helvetica, sans-serif !important;
   color: #fff;
   font-size: 16px; }
+
+h1 {
+  font-family: 'Oswald', sans-serif;
+  text-transform: uppercase;
+  font-size: 28px;
+  line-height: 1;
+  color: #414141;
+  font-weight: normal; }
 
 /*=================================================|
 |               Typography Section                 |
@@ -527,30 +537,110 @@ main header nav {
       float: none !important;
       display: inline-block; }
 main .site-content {
-  background-image: url("../../../images/site-bg.jpg");
-  background-position-x: center;
-  background-position-y: -50px;
-  background-size: cover; }
-  main .site-content .site-title {
-    font-family: Pinyon Script, cursive;
-    color: white;
-    font-size: 90px;
-    line-height: 72px;
-    padding-top: 20px;
-    text-align: center; }
-  main .site-content .site-description {
-    width: 300px;
-    color: #7f7f7f;
-    margin: 50px 0;
-    font-weight: bold; }
-  main .site-content .site-txt {
-    width: 673px; }
-    main .site-content .site-txt h1 {
+  background: #2772a9; }
+  main .site-content .home-banner {
+    background-image: url("../../../images/site-bg.jpg");
+    background-position-x: center;
+    background-position-y: 0px;
+    height: 856px; }
+    main .site-content .home-banner .site-title {
+      font-family: Pinyon Script, cursive;
+      color: white;
+      font-size: 90px;
+      line-height: 72px;
+      padding-top: 20px;
+      text-align: center; }
+    main .site-content .home-banner .slogan img {
+      display: block;
+      margin: 0 auto; }
+    main .site-content .home-banner .site-description {
+      width: 300px;
+      color: #7f7f7f;
+      margin: 50px 0;
+      font-weight: bold; }
+    main .site-content .home-banner .site-txt {
+      width: 673px; }
+  main .site-content .about-us {
+    background: #f9f9f9;
+    padding: 15px; }
+    main .site-content .about-us .head {
+      font-family: 'Oswald', sans-serif;
       text-transform: uppercase;
       font-size: 28px;
       line-height: 1;
       color: #414141;
-      font-weight: bold; }
+      font-weight: normal;
+      margin-bottom: 30px;
+      text-align: center; }
+    main .site-content .about-us .welcome-img {
+      margin-bottom: 30px; }
+      main .site-content .about-us .welcome-img img {
+        width: 100%;
+        border: 20px solid white; }
+    main .site-content .about-us .welcome-desc {
+      color: #7f7f7f;
+      line-height: 1.5;
+      font-size: 14px; }
+    main .site-content .about-us .tour:first-of-type {
+      margin-bottom: 20px; }
+    main .site-content .about-us .tour .tour-img img {
+      width: 100%; }
+    main .site-content .about-us .tour .tour-title {
+      background: white;
+      text-align: center;
+      color: #414141;
+      padding: 5px; }
+    main .site-content .about-us ul {
+      list-style: circle; }
+      main .site-content .about-us ul li {
+        color: #414141;
+        margin: 10px 0; }
+  main .site-content .contact-us {
+    background: #f9f9f9;
+    padding: 15px; }
+    main .site-content .contact-us .head {
+      font-family: 'Oswald', sans-serif;
+      text-transform: uppercase;
+      font-size: 28px;
+      line-height: 1;
+      color: #414141;
+      font-weight: normal;
+      margin-bottom: 30px;
+      text-align: center; }
+    main .site-content .contact-us iframe {
+      width: 100%; }
+    main .site-content .contact-us .map-info {
+      color: #7f7f7f; }
+      main .site-content .contact-us .map-info a {
+        color: #7f7f7f !important; }
+    main .site-content .contact-us form .input-group {
+      margin-bottom: 15px; }
+      main .site-content .contact-us form .input-group label {
+        color: #7f7f7f; }
+    main .site-content .contact-us form button {
+      font-family: 'Oswald', sans-serif;
+      text-transform: uppercase;
+      font-size: 12px;
+      color: #fff;
+      line-height: normal;
+      border: 0 none #444;
+      background-color: #444;
+      padding: 5px 12px;
+      -moz-border-radius: 3px;
+      -webkit-border-radius: 3px;
+      -khtml-border-radius: 3px;
+      border-radius: 3px;
+      -moz-box-shadow: 1px 1px 0 #ccc;
+      -webkit-box-shadow: 1px 1px 0 #ccc;
+      -khtml-box-shadow: 1px 1px 0 #ccc;
+      box-shadow: 1px 1px 0 #ccc; }
+  main .site-content footer {
+    text-align: center;
+    padding-bottom: 20px; }
+    main .site-content footer .footer-text {
+      text-align: center; }
+      main .site-content footer .footer-text a {
+        color: white; }
 
 /*=================================================|
 |                    Responsive Section            |
@@ -560,7 +650,28 @@ main .site-content {
     padding-right: 15px !important;
     padding-left: 15px !important; }
 
+  main .site-content .home-banner {
+    height: 330px !important;
+    background-size: cover; }
+
   main .site-content .site-title {
-    color: black; } }
+    line-height: 0px !important;
+    padding-top: 0px !important;
+    font-size: 30px !important; }
+
+  main .site-content .slogan {
+    display: none !important; }
+
+  main .site-content .home-banner .site-txt {
+    width: auto !important; }
+
+  main .site-content .about-us .col-xs-12.col-md-4 {
+    margin: 10px 0; }
+
+  main .site-content .about-us ul {
+    margin-left: 20px; }
+
+  .footer-img img {
+    width: 100%; } }
 
 /*# sourceMappingURL=main.css.map */

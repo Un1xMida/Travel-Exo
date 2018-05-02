@@ -1,49 +1,38 @@
 @import url("https://fonts.googleapis.com/css?family=Yesteryear");
 @import url("https://fonts.googleapis.com/css?family=Raleway");
-/* line 1, ../../sass/main.scss */
 .font-special {
   font-family: 'Yesteryear', cursive; }
 
-/* line 5, ../../sass/main.scss */
 .font-normal {
   font-family: 'Raleway', sans-serif; }
 
-/* line 9, ../../sass/main.scss */
 .overlay {
   background: rgba(0, 0, 0, 0.25); }
 
-/* line 13, ../../sass/main.scss */
 .noPadding-right {
   padding-right: 0px !important; }
 
-/* line 17, ../../sass/main.scss */
 .noPadding-left {
   padding-left: 0px !important; }
 
-/* line 21, ../../sass/main.scss */
 .noPadding {
   padding-left: 0px !important;
   padding-right: 0px !important; }
 
-/* line 26, ../../sass/main.scss */
 .widget {
   padding: 40px 0; }
-  /* line 28, ../../sass/main.scss */
   .widget .widget-title {
     text-align: center; }
-    /* line 30, ../../sass/main.scss */
     .widget .widget-title h2 {
       font-family: 'Yesteryear', cursive;
       margin-bottom: 40px;
       font-size: 65px;
       color: #9b7b32; }
-    /* line 36, ../../sass/main.scss */
     .widget .widget-title p {
       margin-bottom: 40px !important;
       color: #295816;
       font-size: 16px; }
 
-/* line 45, ../../sass/main.scss */
 .goTop {
   position: fixed;
   z-index: 2;
@@ -53,46 +42,45 @@
   padding: 20px;
   display: none;
   cursor: pointer; }
-  /* line 54, ../../sass/main.scss */
   .goTop i {
     font-size: 20px; }
 
 /*=================================================|
 |                    Reset Section                 |
 ==================================================*/
-/* line 64, ../../sass/main.scss */
 *:focus {
   outline: none; }
 
-/* line 68, ../../sass/main.scss */
 h1,
 h2,
 h3 {
   margin: 0; }
 
-/* line 74, ../../sass/main.scss */
 a,
 a:hover,
 a:focus,
 a:active {
   text-decoration: none; }
 
-/* line 81, ../../sass/main.scss */
 .navbar-default .navbar-nav > li > a {
-  color: white; }
+  color: white;
+  font-family: 'Oswald', sans-serif;
+  text-transform: uppercase;
+  font-size: 20px;
+  padding: 10px !important;
+  background: transparent !important; }
+  .navbar-default .navbar-nav > li > a:hover {
+    color: #8de5ff !important; }
 
-/* line 85, ../../sass/main.scss */
-.navbar-default .navbar-nav > .active > a,
-.navbar-default .navbar-nav > .active > a:focus,
-.navbar-default .navbar-nav > .active > a:hover {
-  color: #fff !important;
-  background-color: transparent; }
+.navbar-default .navbar-nav > .active > a {
+  color: #8de5ff !important; }
 
-/* line 92, ../../sass/main.scss */
+.navbar {
+  min-height: auto; }
+
 p {
   margin: 0 !important; }
 
-/* line 96, ../../sass/main.scss */
 .swiper-button-next,
 .swiper-button-prev {
   background-image: none !important;
@@ -100,13 +88,11 @@ p {
   height: auto !important;
   cursor: pointer !important; }
 
-/* line 104, ../../sass/main.scss */
 body {
   font-family: Arial, Helvetica, sans-serif !important;
   color: #fff;
   font-size: 16px; }
 
-/* line 110, ../../sass/main.scss */
 h1 {
   font-family: 'Oswald', sans-serif;
   text-transform: uppercase;
@@ -121,31 +107,26 @@ h1 {
 /*=================================================|
 |                    Shared Section                |
 ==================================================*/
-/* line 131, ../../sass/main.scss */
 .centered-table {
   display: table;
   height: 100%;
   width: 100%; }
-  /* line 135, ../../sass/main.scss */
   .centered-table .centered-elements {
     display: table-cell;
     vertical-align: middle; }
 
-/* line 141, ../../sass/main.scss */
 .relative {
   position: relative; }
 
 /*=================================================|
 |                    Preloader Section             |
 ==================================================*/
-/* line 150, ../../sass/main.scss */
 .preloader-cont {
   background: white;
   position: fixed;
   height: 100%;
   width: 100%;
   z-index: 9; }
-  /* line 156, ../../sass/main.scss */
   .preloader-cont .preloader {
     position: absolute;
     top: 50%;
@@ -160,7 +141,6 @@ h1 {
     transform-origin: center center;
     -webkit-transform: rotateY(180deg) rotateZ(-60deg);
     transform: rotateY(180deg) rotateZ(-60deg); }
-    /* line 170, ../../sass/main.scss */
     .preloader-cont .preloader .slice {
       border-top: 1.125em solid transparent;
       border-right: none;
@@ -172,77 +152,64 @@ h1 {
       -webkit-transform-origin: left bottom;
       transform-origin: left bottom;
       border-radius: 3px 3px 0 0; }
-      /* line 181, ../../sass/main.scss */
       .preloader-cont .preloader .slice:nth-child(1) {
         -webkit-transform: rotateZ(60deg) rotateY(0deg) rotateX(0);
         transform: rotateZ(60deg) rotateY(0deg) rotateX(0);
         -webkit-animation: 0.15s linear 0.82s preload-hide-1 both 1;
         animation: 0.15s linear 0.82s preload-hide-1 both 1; }
-      /* line 187, ../../sass/main.scss */
       .preloader-cont .preloader .slice:nth-child(2) {
         -webkit-transform: rotateZ(120deg) rotateY(0deg) rotateX(0);
         transform: rotateZ(120deg) rotateY(0deg) rotateX(0);
         -webkit-animation: 0.15s linear 0.74s preload-hide-2 both 1;
         animation: 0.15s linear 0.74s preload-hide-2 both 1; }
-      /* line 193, ../../sass/main.scss */
       .preloader-cont .preloader .slice:nth-child(3) {
         -webkit-transform: rotateZ(180deg) rotateY(0deg) rotateX(0);
         transform: rotateZ(180deg) rotateY(0deg) rotateX(0);
         -webkit-animation: 0.15s linear 0.66s preload-hide-3 both 1;
         animation: 0.15s linear 0.66s preload-hide-3 both 1; }
-      /* line 199, ../../sass/main.scss */
       .preloader-cont .preloader .slice:nth-child(4) {
         -webkit-transform: rotateZ(240deg) rotateY(0deg) rotateX(0);
         transform: rotateZ(240deg) rotateY(0deg) rotateX(0);
         -webkit-animation: 0.15s linear 0.58s preload-hide-4 both 1;
         animation: 0.15s linear 0.58s preload-hide-4 both 1; }
-      /* line 205, ../../sass/main.scss */
       .preloader-cont .preloader .slice:nth-child(5) {
         -webkit-transform: rotateZ(300deg) rotateY(0deg) rotateX(0);
         transform: rotateZ(300deg) rotateY(0deg) rotateX(0);
         -webkit-animation: 0.15s linear 0.5s preload-hide-5 both 1;
         animation: 0.15s linear 0.5s preload-hide-5 both 1; }
-      /* line 211, ../../sass/main.scss */
       .preloader-cont .preloader .slice:nth-child(6) {
         -webkit-transform: rotateZ(360deg) rotateY(0deg) rotateX(0);
         transform: rotateZ(360deg) rotateY(0deg) rotateX(0);
         -webkit-animation: 0.15s linear 0.42s preload-hide-6 both 1;
         animation: 0.15s linear 0.42s preload-hide-6 both 1; }
-    /* line 218, ../../sass/main.scss */
     .preloader-cont .preloader.loading {
       -webkit-animation: 2s preload-flip steps(2) infinite both;
       animation: 2s preload-flip steps(2) infinite both; }
-      /* line 222, ../../sass/main.scss */
       .preloader-cont .preloader.loading .slice:nth-child(1) {
         -webkit-transform: rotateZ(60deg) rotateY(90deg) rotateX(0);
         transform: rotateZ(60deg) rotateY(90deg) rotateX(0);
         -webkit-animation: 2s preload-cycle-1 linear infinite both;
         animation: 2s preload-cycle-1 linear infinite both; }
-      /* line 228, ../../sass/main.scss */
       .preloader-cont .preloader.loading .slice:nth-child(2) {
         -webkit-transform: rotateZ(120deg) rotateY(90deg) rotateX(0);
         transform: rotateZ(120deg) rotateY(90deg) rotateX(0);
         -webkit-animation: 2s preload-cycle-2 linear infinite both;
         animation: 2s preload-cycle-2 linear infinite both; }
-      /* line 234, ../../sass/main.scss */
       .preloader-cont .preloader.loading .slice:nth-child(3) {
         -webkit-transform: rotateZ(180deg) rotateY(90deg) rotateX(0);
         transform: rotateZ(180deg) rotateY(90deg) rotateX(0);
         -webkit-animation: 2s preload-cycle-3 linear infinite both;
         animation: 2s preload-cycle-3 linear infinite both; }
-      /* line 240, ../../sass/main.scss */
       .preloader-cont .preloader.loading .slice:nth-child(4) {
         -webkit-transform: rotateZ(240deg) rotateY(90deg) rotateX(0);
         transform: rotateZ(240deg) rotateY(90deg) rotateX(0);
         -webkit-animation: 2s preload-cycle-4 linear infinite both;
         animation: 2s preload-cycle-4 linear infinite both; }
-      /* line 246, ../../sass/main.scss */
       .preloader-cont .preloader.loading .slice:nth-child(5) {
         -webkit-transform: rotateZ(300deg) rotateY(90deg) rotateX(0);
         transform: rotateZ(300deg) rotateY(90deg) rotateX(0);
         -webkit-animation: 2s preload-cycle-5 linear infinite both;
         animation: 2s preload-cycle-5 linear infinite both; }
-      /* line 252, ../../sass/main.scss */
       .preloader-cont .preloader.loading .slice:nth-child(6) {
         -webkit-transform: rotateZ(360deg) rotateY(90deg) rotateX(0);
         transform: rotateZ(360deg) rotateY(90deg) rotateX(0);
@@ -565,30 +532,24 @@ h1 {
 /*=================================================|
 |                    Site Section                  |
 ==================================================*/
-/* line 686, ../../sass/main.scss */
 main header nav {
   background: #3b87c5 !important;
   border: 1px solid transparent !important;
   border-radius: 0 !important;
   margin-bottom: 0 !important; }
-  /* line 691, ../../sass/main.scss */
   main header nav ul.nav {
     float: none !important;
     text-align: center; }
-    /* line 694, ../../sass/main.scss */
     main header nav ul.nav li {
       float: none !important;
       display: inline-block; }
-/* line 701, ../../sass/main.scss */
 main .site-content {
   background: #2772a9; }
-  /* line 703, ../../sass/main.scss */
   main .site-content .home-banner {
     background-image: url("../../../images/site-bg.jpg");
     background-position-x: center;
     background-position-y: 0px;
     height: 856px; }
-    /* line 708, ../../sass/main.scss */
     main .site-content .home-banner .site-title {
       font-family: Pinyon Script, cursive;
       color: white;
@@ -596,24 +557,27 @@ main .site-content {
       line-height: 72px;
       padding-top: 20px;
       text-align: center; }
-    /* line 717, ../../sass/main.scss */
-    main .site-content .home-banner .slogan img {
-      display: block;
-      margin: 0 auto; }
-    /* line 722, ../../sass/main.scss */
+    main .site-content .home-banner .slogan {
+      color: #8de5ff;
+      font-family: 'Oswald', sans-serif;
+      font-size: 17px;
+      line-height: 1;
+      text-transform: uppercase; }
+      main .site-content .home-banner .slogan img {
+        display: block;
+        margin: 0 auto; }
     main .site-content .home-banner .site-description {
       width: 300px;
       color: #7f7f7f;
       margin: 50px 0;
       font-weight: bold; }
-    /* line 728, ../../sass/main.scss */
     main .site-content .home-banner .site-txt {
-      width: 673px; }
-  /* line 732, ../../sass/main.scss */
+      width: 673px;
+      margin: 70px auto 0 auto;
+      text-align: center; }
   main .site-content .about-us {
     background: #f9f9f9;
     padding: 15px; }
-    /* line 735, ../../sass/main.scss */
     main .site-content .about-us .head {
       font-family: 'Oswald', sans-serif;
       text-transform: uppercase;
@@ -623,42 +587,32 @@ main .site-content {
       font-weight: normal;
       margin-bottom: 30px;
       text-align: center; }
-    /* line 745, ../../sass/main.scss */
     main .site-content .about-us .welcome-img {
       margin-bottom: 30px; }
-      /* line 747, ../../sass/main.scss */
       main .site-content .about-us .welcome-img img {
         width: 100%;
-        border: 20px solid white; }
-    /* line 752, ../../sass/main.scss */
+        height: 158px; }
     main .site-content .about-us .welcome-desc {
       color: #7f7f7f;
       line-height: 1.5;
       font-size: 14px; }
-    /* line 758, ../../sass/main.scss */
     main .site-content .about-us .tour:first-of-type {
       margin-bottom: 20px; }
-    /* line 762, ../../sass/main.scss */
     main .site-content .about-us .tour .tour-img img {
       width: 100%; }
-    /* line 766, ../../sass/main.scss */
     main .site-content .about-us .tour .tour-title {
       background: white;
       text-align: center;
       color: #414141;
       padding: 5px; }
-    /* line 773, ../../sass/main.scss */
     main .site-content .about-us ul {
       list-style: circle; }
-      /* line 775, ../../sass/main.scss */
       main .site-content .about-us ul li {
         color: #414141;
         margin: 10px 0; }
-  /* line 781, ../../sass/main.scss */
   main .site-content .contact-us {
     background: #f9f9f9;
     padding: 15px; }
-    /* line 784, ../../sass/main.scss */
     main .site-content .contact-us .head {
       font-family: 'Oswald', sans-serif;
       text-transform: uppercase;
@@ -668,24 +622,18 @@ main .site-content {
       font-weight: normal;
       margin-bottom: 30px;
       text-align: center; }
-    /* line 794, ../../sass/main.scss */
     main .site-content .contact-us iframe {
       width: 100%; }
-    /* line 797, ../../sass/main.scss */
     main .site-content .contact-us .map-info {
       color: #7f7f7f; }
-      /* line 799, ../../sass/main.scss */
       main .site-content .contact-us .map-info a {
         color: #7f7f7f !important; }
-    /* line 804, ../../sass/main.scss */
     main .site-content .contact-us form .input-group {
       margin-bottom: 15px; }
-      /* line 806, ../../sass/main.scss */
       main .site-content .contact-us form .input-group label {
         color: #7f7f7f; }
-    /* line 810, ../../sass/main.scss */
     main .site-content .contact-us form button {
-      font-family: 'Oswald',sans-serif;
+      font-family: 'Oswald', sans-serif;
       text-transform: uppercase;
       font-size: 12px;
       color: #fff;
@@ -701,14 +649,11 @@ main .site-content {
       -webkit-box-shadow: 1px 1px 0 #ccc;
       -khtml-box-shadow: 1px 1px 0 #ccc;
       box-shadow: 1px 1px 0 #ccc; }
-  /* line 830, ../../sass/main.scss */
   main .site-content footer {
     text-align: center;
     padding-bottom: 20px; }
-    /* line 836, ../../sass/main.scss */
     main .site-content footer .footer-text {
       text-align: center; }
-      /* line 838, ../../sass/main.scss */
       main .site-content footer .footer-text a {
         color: white; }
 
@@ -716,40 +661,52 @@ main .site-content {
 |                    Responsive Section            |
 ==================================================*/
 @media only screen and (max-width: 768px) {
-  /* line 852, ../../sass/main.scss */
   .noPadding {
     padding-right: 15px !important;
     padding-left: 15px !important; }
 
-  /* line 856, ../../sass/main.scss */
   main .site-content .home-banner {
     height: 330px !important;
     background-size: cover; }
 
-  /* line 861, ../../sass/main.scss */
   main .site-content .site-title {
     line-height: 0px !important;
-    padding-top: 0px !important;
-    font-size: 30px; }
+    padding-top: 25px !important;
+    font-size: 24px !important; }
 
-  /* line 866, ../../sass/main.scss */
   main .site-content .slogan {
-    display: none; }
+    display: none !important; }
 
-  /* line 869, ../../sass/main.scss */
+  h1 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    text-align: center; }
+
+  main .site-content .home-banner .site-description {
+    width: 100%;
+    color: #fff !important;
+    margin-top: 275px;
+    text-align: center !important; }
+
   main .site-content .home-banner .site-txt {
     width: auto !important; }
 
-  /* line 872, ../../sass/main.scss */
   main .site-content .about-us .col-xs-12.col-md-4 {
     margin: 10px 0; }
 
-  /* line 875, ../../sass/main.scss */
   main .site-content .about-us ul {
     margin-left: 20px; }
 
-  /* line 878, ../../sass/main.scss */
   .footer-img img {
     width: 100%; } }
+@media only screen and (max-width: 328px) {
+  main .site-content .home-banner {
+    height: 250px !important; }
+
+  main .site-content .home-banner .site-description {
+    margin-top: 210px !important; }
+
+  .widget:first-of-type {
+    padding: 100px 0 40px 0 !important; } }
 
 /*# sourceMappingURL=style.css.map */
